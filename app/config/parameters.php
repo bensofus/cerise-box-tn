@@ -1,0 +1,25 @@
+<?php return array (
+  'parameters' => 
+  array (
+    'database_host' => 'cerised812.mysql.db',
+    'database_port' => '',
+    'database_name' => 'cerised812',
+    'database_user' => 'cerised812',
+    'database_password' => 'b855EtTJtXEv',
+    'database_prefix' => 'ps_',
+    'database_engine' => 'InnoDB',
+    'mailer_transport' => 'smtp',
+    'mailer_host' => '127.0.0.1',
+    'mailer_user' => NULL,
+    'mailer_password' => NULL,
+    'secret' => 'YYtSVMRsGHOMpn56DvuKvvbk5IDpGWuSmr06Rbd3ayiyNwdFdWeJaPVPdArj9wPH',
+    'ps_caching' => 'CacheMemcached',
+    'ps_cache_enable' => true,
+    'ps_creation_date' => '2024-04-30',
+    'locale' => 'fr-FR',
+    'use_debug_toolbar' => true,
+    'cookie_key' => '2wVCOQwwDFuAovs7O3B4pgcmz2ifgEW4u3UI3xUnupTQ3ifs3tLgDx1tHLGe7eRR',
+    'cookie_iv' => 'ArsryyNiap86V8vi1soqU6AyT1fhaP6P',
+    'new_cookie_key' => 'def000003bbdf591ff3bd0904eae0e6d84ca6bb028e641cdf09e6d3255ee9b10c1abfa2b4edb705b5cbd3cf44a0d4af289ed3fb2d79886de2c32df8a642a1eaba70a5092',
+  ),
+);

@@ -1,0 +1,154 @@
+Last versions for the paid plugins:
+carriers: 1.01
+combi copy and delete: 1.01
+discounts: 1.04
+features: 1.02
+image cleanup: 1.00
+multishop: 1.04
+super package: 1.16
+suppliers: 1.05
+tags: 1.03
+virtual: 1.01
+
+Change log:
+1.27: feature-edit added. Field matrix changed.
+1.26h: many changes in image conversion. png's are now supported.
+1.23j: added Filemanager. This Tinymce plugin allows you to find an image file by browsing. It doubles the size of the Prestools distribution file.
+1.23g: inside prodcombi you can now mass edit discounts for attribute combinations.
+    bug fixed that blocked link rewrite regeneration without accents.
+1.23: integrity checks got more checks. The multishop plugin now can handle four tables instead of one.
+1.22o: prodcombi got a lot of fixes.
+1.22n: image-generate got some new options. Added "light" integrity checks.
+1.22m: added active checkboxes to the image-only mode of product-edit
+   active checkbox in product-solo is now top right
+   image regenerate now has the same default as Prestashop: missing only
+1.22l: Repaired bug that image-cleanup sometimes reported active images when their database representation was buggy.
+   image-cleanup now also reports products without images and products with missing images.
+   order-search got a lot of small improvements
+   added customer-search and customer csv mix. 
+   Sales graph has now five graphics.
+   link_rewrite is automatically changed when the product name is changed if that is in your PS settings.
+   in add_products (part of order-edit) some products were invisible. That has been fixed. 
+   in order-edit the VAT calculation style has been changed.
+1.22d: added ProdCombi and Feature List
+1.22a: added shops and exceptions to module_info. Fixed regexp in replace in product-edit.
+1.22: added Attribute list and Cleanup for abandoned carts. Added id gatherer at bottom of product-edit.php
+1.22y: added submask option in ipaddresses.php
+1.21f: added integrity checks for categories and some repair options. Added translation
+       cleanup.
+1.21d: repaired the mini-module and product-solo
+1.21: added attribute sort 
+       added sort by amount, customer and best customer to order-search.php
+       fixed bug from 1.20 that prevented saving of tag changes.
+       added "advanced" to product-sort.php. This allows block moves and partial sorting.
+1.20f: fixed some things in combi-copy. The detection for missing or extra fields is now
+       more intelligent and prices, etc are no longer automatically copied to new
+       combinations.
+1.20b: fixed a bug in 1.20 that caused that changes in select boxes like VAT
+       were not saved
+1.20: added virtual product editing - a paid plugin. This involved changing the way
+       rowsubmit works.
+1.19b: category numbers in product edit will now lead to the category when clicked
+       Added System requirements page for Prestashop 1.6 and 1.7 and Thirty Bees.
+       Changed .htaccess to stop excessive caching 
+1.19:  added category statistics, better login security and feature and attribute search
+1.18e: added override list
+1.18d: added default supplier to supplier edit
+1.17k: added shopz to product-edit. This enables you to add a product to more shops in multishop.
+1.17i: second sales graph: 168 hours
+1.17e: added valuta to the supplier field/plugin
+1.17b: fixed bug that search didn't work when active or inactive search was set
+1.17a: added $updateallshops in settings1.php [for multishop]
+1.17:  add sales graph; enabled combi-copy for PS 1.7. Bugfix combi-edit with more than one attribute.
+1.16q: fix caching problem
+1.16p: fix vissort in multishop setting
+       order-search shows now all addresses
+       product-edit replace replaces now more than once
+1.16o: bugfix stock in add-product
+1.16n: bugfix stockkeeping order edit
+       added extra line in search block with active and image size.
+       improved order-search
+       new menu ordening
+1.16i: improved replace in product mass edit. mini-module works now better under other languages. With Combi-edit you can now make sub-selections and do mass edit.
+1.16h: added search on combinations
+       added "edit" function to combinations in product-edit that shows quantities.
+       fixed missing indexation for combi-copy and combi-delete
+       added virtual product fields like expiration date
+1.16f: improved order-search
+       added "add fixed target discount" mass edit option
+       split "Cleaning Up" from "Shop Rescue"
+1.16c: improved active-modules, that in 1.16d was renamed to module-info
+1.16: added deletion of unused images. Added SSL flags
+to shop rescue.
+1.15f: fixed errors in add_products and diskspace due to a changed get_image function. Gave order-search a major upgrade - including csv export. Add-products can now search on product id.   
+1.15c: fixes to make the software run with Prestashop 1.7
+1.15: product-edit has been split with the javascript functions in a separate file product-edit.js. The searchblock and the list and csv pages got a major update.
+1.14n: more bugfixes due to translations. Added position field.
+1.14l: fixed bugs with features due to introduction of translations. Added compare options in search block.
+1.14i: Added reset cacheflags to Shop Rescue
+1.14g: added newprice field to discount edit fields so that you can immediately see results
+       Added support for legacy image paths. Added t() function for translations.
+1.14d: Included TinyMCE (what doubles file size). CSS driven menu and visual update (thanks to Hakeryk2).
+1.14c: fixed default selection for combicopy and combidelete.
+1.14b: some more translation fixes. Updated TinyMce links.
+1.14a: some fixes for translations. Addition of PS 1.7 database fields.
+1.14: translations for db fields
+1.13a: bugfix for url-seo.php (PS 1.5 error) and orders-eu-tax (grouping didn't work). Fieldsorder variable added to settings1.php.
+1.13: Search for products with discounts added. Product links on names work now also when the shop uses non-standard links.
+1.12j: next/prev added; bugfix for stockflags
+1.12i: Search options now alphabetically ordened. Search on warehouse added.
+1.12g: added possibility to change legends in product-edit.php. some bug fixes.
+1.12f: addressed limitation that restricted copy-edit and copy-delete to some 420 combinations
+1.12e: made script compatible with Mysql 5.7.5 and higher
+1.12d: fixed bug with added tax rules for provinces (states)
+1.12: Add module. Added order statuses to order-search
+1.11c: added clean-cache to shop-rescue
+1.11b: fixed bug in url-seo edit that prevented submission of changes
+1.11a: fixed bug in order-edit (only for countries with states)
+1.11: addition of shop-rescue
+1.10u: bugfix: check for version-specific functionality did not always work correctly
+1.10t: the discount edit popup did not set the changed flag and the background color of the row. Repaired that.
+1.10s: quotes in shop and country names caused problems. Repaired that.
+1.10r: order-edit was reconstructed. It has now a separate order-proc.php file and supports "verbose". 
+1.10q: Some bug fixes (international discount edit and image-regenerate) and an enhanced order-seach.
+1.10p: Added indexing for cat name. Referer hiding for cat and prod. Filtering of
+       scripts and iframe in descriptions
+1.10o: added image-overview.php. Added Imagick preview. Improved product-list.
+1.10n: bugfix for imagick for pictures with uneven sides in image_regenerate.
+1.10m: added 5 fields to product-edit and changed availability for order field so that it 
+       also covers show_price. Polished image_regenerate.
+1.10l: added checkbox to make indexing optional and button to index all remaining.
+       repaired bug that made it impossible to login with urls with port numbers
+1.10j: added Imagick support to image_renerate
+1.10g: added word indexing
+       added order search
+       added possibility to save data for all shops
+       added "copy from field" for upc, ean13 and reference
+       added for image regenerate the possibility of image id ranges
+1.10f: catalogue rules for combi-copy and combi-delete, 
+       increase for unitPrice in product-edit.php
+       order-edit can now select orders on their reference
+1.10e: bugfix (submit all didn't work)
+1.10d: added indexed field so that users can use additional re-indexing to include changed names and descriptions
+1.10c: added UPC and out_of_stock fields plus bugfix
+1.10b:  Added maxwidth to shopsearch.php
+        Added shipping costs statistics script
+	    Added order-not-found warning to order-edit.php
+		Repaired bug in mass remove for discounts
+		Added transfer of quantities (and a bug fix) to product-edit stockflags
+		Added the out_of_stock field that allows you to determine by product how to handle out-of-stock
+1.10a:  Fixed incompatibility in product-proc.php with older php versions.
+1.10:	Added group editing for categories (included restructuring of cat-edit.php)
+		Added "increase amount" option in the mass update field for prices and quantities.
+		Repaired a bug that came with the added spaces in categories - and that made that not all showed when made editable
+1.09x:  adapted approve.php to handle hosting provider 1and1 that has server names like "localhost:/tmp/mysql5.sock".
+		added spaces between categories so that with many categories there will be linebreaks.
+1.09: Modifications to make the script compatible with Prestashop 1.6.1 and newer
+1.08: Added copying, modifying and deleting attribute combinations using one product as an example
+1.07: Added product attachment edit; modified product-sort
+1.06: Added (paid) supplier module
+1.05: Added a products-sold and categories-revenue scripts.
+1.02: More search options in product-edit. Search now for supplier name instead of id.
+1.0: mass edit for carriers added in the paid only section.
+
+Note: not mentioned versions are either small improvements or bug fixes.

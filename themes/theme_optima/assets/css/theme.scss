@@ -1,0 +1,88 @@
+@import 'roadthemes-icon';
+
+/* cms page */
+.brand-content {
+    @include flex;
+    justify-content: center;
+
+    .brand {
+        @include flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        .brand-products {
+            a {
+                font-size: 0.875rem;
+                text-transform: capitalize;
+                font-weight: $font-weight-semibold;
+
+                &:not(:last-child) {
+                    margin-right: 1.25rem;
+                }
+            }
+        }
+
+        .brand-infos {
+            a {
+                font-size: 1.125rem;
+                text-transform: capitalize;
+                font-weight: $font-weight-semibold;
+            }
+        }
+    }
+}
+
+.elementor-widget-image-carousel .elementor-slick-slider ul.slick-dots {
+    position: static;
+    margin: 1.25rem 0 0 0;
+    display: flex;
+
+    li {
+        button {
+            background: #ccc;
+        }
+
+        &.slick-active,
+        &:hover {
+            button {
+                background: var(--hovercolor);
+            }
+        }
+    }
+}
+
+
+.slideshow-item {
+    position: relative;
+}
+
+.pos-search__result .result-content>a:not(:hover) {
+    color: $main-color;
+}
+
+.page-addresses .addresses-footer {
+    margin-bottom: 2rem;
+}
+
+#module-psgdpr-gdpr .page-content .container {
+    padding: 0;
+}
+
+.menu-no-gap .main-menu .pos-menu-horizontal .menu-content .menu-item .menu-dropdown {
+    padding-top: 0;
+}
+
+#posnewsletterpopup .title-popup h2,
+#checkout section.checkout-step .add-address a,
+#checkout section.checkout-step .step-title,
+.js-product-miniature .product_desc .product_name,
+#tags_block h2,
+#search_filters_wrapper #search_filters .facet .facet-title,
+#search_filters_wrapper #search_filters .h6,
+.h1.namne_details,
+.product_name_h1 {
+    font-weight: var(--font-weight);
+}

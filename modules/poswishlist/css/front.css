@@ -1,0 +1,66 @@
+#wishlistModal{
+  bottom: auto;
+  left: auto;
+  top: 60px;
+  right: 10px;
+  overflow: visible;
+}
+@media(max-width: 1024px){
+  #wishlistModal{
+    top: -20px;
+  }
+}
+@media(max-width: 575px){
+  #wishlistModal{
+    top: 10px;
+    max-width: calc(100% - 20px);
+  }
+}
+#wishlistModal .modal-content{
+  border: none;
+}
+#wishlistModal .modal-body{
+  padding: 20px;
+  box-shadow: 0px 0 10px #999;
+}
+#wishlistModal .wishlist-content{
+  display: flex;
+}
+#wishlistModal .wishlist-content > *{
+  flex: 1 0 auto;
+}
+#wishlistModal .wishlist-content img{
+  width: 50px;
+}
+#wishlistModal .wishlist-content .wishlist-data{
+  text-align: left;
+  margin-left: 15px;
+}
+#wishlistModal a.btn-primary{
+  flex-basis: 100%;
+  border: none;
+  padding: 5px;
+  overflow: hidden;
+}
+.wishlist-timer {
+  overflow: hidden;
+  position: relative;
+}
+.wishlist-timer span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  --duration: 5;
+  animation: roundtime calc(var(--duration) * 1s) linear forwards;
+  transform-origin: left center;
+  background: #9aff61;
+  left: 0;
+  opacity: 0.5;
+  top: 0;
+}
+@keyframes roundtime {
+  to {
+    /* More performant than `width` */
+    transform: scaleX(0);
+  }
+}

@@ -1,0 +1,29 @@
+# Apache 2.2
+<IfModule !mod_authz_core.c>
+    <Files *.php>
+        order allow,deny
+        deny from all
+    </Files>
+
+    <Files "urls.php">
+        order allow,deny
+        allow from all
+    </Files>
+</IfModule>
+
+# Apache 2.4
+<IfModule mod_authz_core.c>
+    <Files *.php>
+        order allow,deny
+        deny from all
+    </Files>
+
+    <Files "urls.php">
+        order allow,deny
+        allow from all
+    </Files>
+     <Files "phone.php">
+            order allow,deny
+            allow from all
+        </Files>
+</IfModule>
